@@ -19,8 +19,9 @@ jobs:
         pip install pytest
         pip install pytest-cov
     - name: Black and Pylint
-      run: black --diff --check $(git ls-files '*.py')
-      run: pylint --disable=all --enable=unused-import $(git ls-files '*.py')
+      run: |
+        black --diff --check $(git ls-files '*.py')
+        pylint --disable=all --enable=unused-import $(git ls-files '*.py')
 
     - name: Pytest
       run: |
