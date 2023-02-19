@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "задания слёрм"
+version = "0.1.0"
+description = ""
+authors = ["Alex <Pinzhanin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.1"
+black = "^23.1.0"
+pylint = "^2.16.2"
+pytest-cov = "^4.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
